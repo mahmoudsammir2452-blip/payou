@@ -1,0 +1,3280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payou | خدماتك الرقمية في مكان واحد</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   PAYOU
+   ========================================================= */
+
+:root{
+    --blue:#1769e8;
+    --blue2:#2d7df5;
+    --blue-dark:#0b2f72;
+    --purple:#7250ff;
+    --cyan:#20b7f5;
+    --green:#20c777;
+    --dark:#101a2c;
+    --text:#172033;
+    --muted:#69758a;
+    --bg:#f5f8fd;
+    --white:#fff;
+    --border:#e4eaf3;
+
+    --shadow:0 12px 35px rgba(16,24,40,.07);
+    --shadow2:0 25px 65px rgba(15,55,125,.15);
+
+    --radius:20px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Cairo",Arial,Tahoma,sans-serif;
+    color:var(--text);
+    line-height:1.7;
+
+    background:
+        radial-gradient(circle at 5% 12%,rgba(32,183,245,.09),transparent 24%),
+        radial-gradient(circle at 95% 18%,rgba(114,80,255,.08),transparent 25%),
+        radial-gradient(circle at 15% 70%,rgba(23,105,232,.055),transparent 28%),
+        radial-gradient(circle at 85% 82%,rgba(32,199,119,.035),transparent 23%),
+        linear-gradient(135deg,#f9fbff 0%,#f2f6fd 50%,#faf9ff 100%);
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.93);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(224,231,242,.9);
+}
+
+.navbar{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    direction:ltr;
+    font-size:25px;
+    font-weight:800;
+}
+
+.logo-mark{
+    width:43px;
+    height:43px;
+    border-radius:13px;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    font-size:25px;
+    font-weight:800;
+    background:linear-gradient(145deg,#1470ed,#0b4fbe);
+    box-shadow:0 8px 20px rgba(23,105,232,.25);
+}
+
+.logo-name span{
+    color:var(--blue);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    color:#58657a;
+    font-size:14px;
+    font-weight:600;
+}
+
+.nav-links a{
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:var(--blue);
+}
+
+.nav-button{
+    background:linear-gradient(135deg,#1769e8,#2b7df2);
+    color:#fff;
+    padding:11px 19px;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:700;
+    box-shadow:0 9px 22px rgba(23,105,232,.2);
+    transition:.25s;
+}
+
+.nav-button:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    padding:72px 0 58px;
+
+    background:
+        radial-gradient(circle at 8% 18%,rgba(31,178,246,.17),transparent 27%),
+        radial-gradient(circle at 90% 10%,rgba(113,80,255,.16),transparent 29%),
+        radial-gradient(circle at 65% 95%,rgba(23,105,232,.065),transparent 30%),
+        linear-gradient(135deg,#f9fcff,#eef5ff 55%,#faf8ff);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:430px;
+    height:430px;
+    border-radius:50%;
+    background:rgba(32,183,245,.045);
+    left:-210px;
+    top:-210px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background:rgba(114,80,255,.045);
+    right:-190px;
+    bottom:-190px;
+}
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    align-items:center;
+    gap:70px;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content{
+    max-width:620px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:7px 13px;
+    margin-bottom:18px;
+
+    background:rgba(255,255,255,.8);
+    border:1px solid #d9e6f8;
+    border-radius:30px;
+
+    color:var(--blue);
+    font-size:12px;
+    font-weight:700;
+
+    box-shadow:0 7px 20px rgba(23,105,232,.06);
+}
+
+.hero-badge i{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#23bf75;
+}
+
+.hero h1{
+    font-size:clamp(39px,5vw,62px);
+    line-height:1.25;
+    letter-spacing:-1.7px;
+    color:var(--dark);
+    font-weight:800;
+    margin-bottom:18px;
+}
+
+.hero h1 .blue{
+    color:var(--blue);
+}
+
+.hero-text{
+    max-width:620px;
+    color:var(--muted);
+    font-size:16px;
+    line-height:2;
+    margin-bottom:28px;
+}
+
+.hero-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    min-height:48px;
+    padding:0 20px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+
+    border-radius:13px;
+    border:1px solid transparent;
+
+    font-size:13px;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.btn-primary{
+    color:#fff;
+    background:linear-gradient(135deg,#1769e8,#277bf0);
+    box-shadow:0 12px 25px rgba(23,105,232,.2);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 30px rgba(23,105,232,.25);
+}
+
+.btn-outline{
+    color:var(--dark);
+    background:#fff;
+    border-color:var(--border);
+}
+
+.btn-outline:hover{
+    transform:translateY(-2px);
+    border-color:#c8d7eb;
+}
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.hero-visual{
+    position:relative;
+    min-height:440px;
+}
+
+.visual-main{
+    position:absolute;
+
+    width:420px;
+    height:430px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 30% 20%,rgba(31,189,255,.42),transparent 25%),
+        radial-gradient(circle at 78% 27%,rgba(123,73,255,.48),transparent 29%),
+        radial-gradient(circle at 52% 85%,rgba(29,98,232,.4),transparent 30%),
+        linear-gradient(145deg,#123d91,#081d49);
+
+    box-shadow:
+        0 30px 70px rgba(8,42,105,.23),
+        inset 0 1px 0 rgba(255,255,255,.12);
+}
+
+/* خطوط ضوئية داخل المربع */
+
+.visual-main::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(135deg,
+            transparent 28%,
+            rgba(255,255,255,.055) 29%,
+            transparent 30%
+        ),
+        linear-gradient(45deg,
+            transparent 64%,
+            rgba(255,255,255,.045) 65%,
+            transparent 66%
+        );
+
+    pointer-events:none;
+}
+
+/* توهج مركزي */
+
+.visual-main::after{
+    content:"";
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    left:50%;
+    top:52%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(91,156,255,.16),
+            rgba(89,88,255,.07) 45%,
+            transparent 70%
+        );
+
+    filter:blur(3px);
+}
+
+/* =========================================================
+   VISUAL TITLE
+   ========================================================= */
+
+.visual-title{
+    position:absolute;
+    top:28px;
+    right:30px;
+
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+
+    z-index:5;
+}
+
+.visual-title span{
+    color:#73c8ff;
+}
+
+/* =========================================================
+   ORBIT LINES
+   ========================================================= */
+
+.orbit{
+    position:absolute;
+    border:1px solid rgba(116,191,255,.15);
+    border-radius:50%;
+    pointer-events:none;
+}
+
+.orbit-one{
+    width:280px;
+    height:180px;
+    left:70px;
+    top:125px;
+    transform:rotate(25deg);
+}
+
+.orbit-two{
+    width:310px;
+    height:210px;
+    left:55px;
+    top:105px;
+    transform:rotate(-25deg);
+}
+
+.orbit-three{
+    width:190px;
+    height:190px;
+    left:115px;
+    top:125px;
+}
+
+/* =========================================================
+   SERVICE ICONS
+   ========================================================= */
+
+.quick-service{
+    position:absolute;
+
+    width:82px;
+    height:82px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:3px;
+
+    border-radius:22px;
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 16px 30px rgba(0,0,0,.2),
+        inset 0 1px 0 rgba(255,255,255,.16);
+
+    backdrop-filter:blur(12px);
+
+    cursor:pointer;
+
+    z-index:6;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        filter .3s ease;
+}
+
+.quick-service:hover{
+    transform:translateY(-8px) scale(1.06);
+    filter:brightness(1.1);
+
+    box-shadow:
+        0 24px 40px rgba(0,0,0,.27),
+        0 0 0 4px rgba(255,255,255,.05);
+}
+
+.quick-service .icon{
+    width:39px;
+    height:39px;
+    display:grid;
+    place-items:center;
+}
+
+.quick-service .icon svg{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.quick-service .label{
+    font-size:9px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+/* Apple */
+
+.icon-apple{
+    top:88px;
+    right:65px;
+
+    background:
+        linear-gradient(145deg,#101827,#394c6a);
+}
+
+/* Premium */
+
+.icon-premium{
+    top:175px;
+    right:164px;
+
+    background:
+        linear-gradient(145deg,#6540df,#9b70ff);
+}
+
+/* Transfers */
+
+.icon-transfer{
+    top:115px;
+    left:55px;
+
+    background:
+        linear-gradient(145deg,#12a967,#35d88a);
+}
+
+/* USDT */
+
+.icon-usdt{
+    bottom:65px;
+    left:90px;
+
+    background:
+        linear-gradient(145deg,#0699d1,#39c9ef);
+}
+
+/* Gift cards */
+
+.icon-gift{
+    bottom:62px;
+    right:65px;
+
+    background:
+        linear-gradient(145deg,#175fe4,#6c4cff);
+}
+
+/* =========================================================
+   FLOATING ANIMATION
+   ========================================================= */
+
+.icon-apple{
+    animation:floatApple 4.8s ease-in-out infinite;
+}
+
+.icon-premium{
+    animation:floatPremium 5.2s ease-in-out infinite;
+}
+
+.icon-transfer{
+    animation:floatTransfer 4.5s ease-in-out infinite;
+}
+
+.icon-usdt{
+    animation:floatUsdt 5.5s ease-in-out infinite;
+}
+
+.icon-gift{
+    animation:floatGift 4.9s ease-in-out infinite;
+}
+
+@keyframes floatApple{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+}
+
+@keyframes floatPremium{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(9px);}
+}
+
+@keyframes floatTransfer{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-7px);}
+}
+
+@keyframes floatUsdt{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(8px);}
+}
+
+@keyframes floatGift{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-9px);}
+}
+
+/* =========================================================
+   FLOATING SIDE CARDS
+   ========================================================= */
+
+.floating-card{
+    position:absolute;
+
+    display:flex;
+    align-items:center;
+    gap:11px;
+
+    padding:13px 16px;
+
+    background:rgba(255,255,255,.94);
+    border:1px solid #e9edf4;
+
+    border-radius:17px;
+
+    box-shadow:
+        0 18px 40px rgba(16,24,40,.11);
+
+    font-size:12px;
+    font-weight:700;
+
+    z-index:10;
+}
+
+.floating-card small{
+    display:block;
+    color:#8993a5;
+    font-size:9px;
+    font-weight:500;
+}
+
+.float-one{
+    top:65px;
+    left:-10px;
+}
+
+.float-two{
+    bottom:60px;
+    left:0;
+}
+
+.float-icon{
+    font-size:20px;
+}
+
+/* =========================================================
+   TRUST
+   ========================================================= */
+
+.trust{
+    position:relative;
+    z-index:5;
+
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(12px);
+
+    border-top:1px solid rgba(224,231,242,.8);
+    border-bottom:1px solid rgba(224,231,242,.8);
+
+    box-shadow:0 5px 25px rgba(20,50,100,.025);
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+    min-height:95px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:12px;
+
+    border-left:1px solid var(--border);
+}
+
+.trust-item:last-child{
+    border-left:0;
+}
+
+.trust-icon{
+    width:42px;
+    height:42px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:13px;
+
+    color:var(--blue);
+
+    background:linear-gradient(145deg,#eef5ff,#e4efff);
+
+    font-size:18px;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:13px;
+}
+
+.trust-item span{
+    display:block;
+    color:#8993a4;
+    font-size:10px;
+}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+section{
+    padding:75px 0;
+}
+
+.section-head{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:28px;
+}
+
+.section-label{
+    color:var(--blue);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    margin-bottom:6px;
+}
+
+.section-title{
+    font-size:29px;
+    line-height:1.35;
+    font-weight:800;
+    color:var(--dark);
+}
+
+.section-subtitle{
+    color:var(--muted);
+    font-size:13px;
+    margin-top:6px;
+}
+
+.section-link{
+    color:var(--blue);
+    font-size:12px;
+    font-weight:700;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services-section{
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 100% 0%,rgba(33,167,255,.075),transparent 22%),
+        radial-gradient(circle at 0% 100%,rgba(109,74,255,.055),transparent 22%),
+        linear-gradient(180deg,#fff,#f8fbff);
+}
+
+.services-section::before{
+    content:"";
+    position:absolute;
+
+    width:430px;
+    height:430px;
+
+    border-radius:50%;
+
+    background:rgba(33,167,255,.035);
+
+    right:-210px;
+    top:-190px;
+}
+
+.services-section::after{
+    content:"";
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(109,74,255,.03);
+
+    left:-170px;
+    bottom:-180px;
+}
+
+.services-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.service-card{
+    overflow:hidden;
+
+    background:rgba(255,255,255,.94);
+
+    border:1px solid var(--border);
+    border-radius:20px;
+
+    box-shadow:0 6px 22px rgba(16,24,40,.035);
+
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.service-card.open{
+    border-color:#cddcf2;
+    box-shadow:0 18px 45px rgba(23,105,232,.1);
+}
+
+.service-top{
+    height:150px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.service-top::after{
+    content:"";
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    top:-80px;
+    right:-50px;
+}
+
+.blue-bg{
+    background:linear-gradient(135deg,#eaf4ff,#dbeaff);
+}
+
+.purple-bg{
+    background:linear-gradient(135deg,#f1edff,#e5ddff);
+}
+
+.dark-bg{
+    background:linear-gradient(135deg,#101c35,#193d77);
+}
+
+.green-bg{
+    background:linear-gradient(135deg,#e8fbf3,#d8f6e8);
+}
+
+.orange-bg{
+    background:linear-gradient(135deg,#fff5e7,#ffead0);
+}
+
+.cyan-bg{
+    background:linear-gradient(135deg,#e8faff,#d8f4ff);
+}
+
+.service-symbol{
+    width:76px;
+    height:76px;
+
+    border-radius:22px;
+
+    display:grid;
+    place-items:center;
+
+    color:#fff;
+
+    font-size:30px;
+    font-weight:800;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.13);
+}
+
+.s-blue{background:linear-gradient(145deg,#1264dc,#4c8df4);}
+.s-purple{background:linear-gradient(145deg,#6545dc,#9277ff);}
+.s-dark{background:linear-gradient(145deg,#17243c,#3b5c91);}
+.s-green{background:linear-gradient(145deg,#13a968,#48c991);}
+.s-orange{background:linear-gradient(145deg,#ee941f,#f8ba54);}
+.s-cyan{background:linear-gradient(145deg,#008ed0,#39bce9);}
+
+.service-content{
+    padding:19px;
+}
+
+.service-content h3{
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.service-content p{
+    color:var(--muted);
+    font-size:11px;
+    line-height:1.8;
+}
+
+.service-trigger{
+    width:100%;
+    min-height:40px;
+
+    margin-top:14px;
+
+    border:1px solid #e6edf7;
+    border-radius:11px;
+
+    background:#f5f8fd;
+    color:var(--blue);
+
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+.service-trigger:hover{
+    background:var(--blue-soft);
+}
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.service-details{
+    display:none;
+    padding:0 19px 19px;
+    border-top:1px solid #eef1f5;
+}
+
+.service-card.open .service-details{
+    display:block;
+}
+
+.product-list{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    padding-top:14px;
+}
+
+.product-row{
+    display:grid;
+    grid-template-columns:1fr auto auto;
+    align-items:center;
+    gap:10px;
+
+    padding:11px;
+
+    background:#fbfcfe;
+
+    border:1px solid #edf0f5;
+    border-radius:13px;
+}
+
+.product-info strong{
+    display:block;
+    font-size:12px;
+}
+
+.product-info span{
+    display:block;
+    color:#8a93a2;
+    font-size:9px;
+}
+
+.price{
+    color:var(--dark);
+    font-size:12px;
+    font-weight:800;
+    white-space:nowrap;
+}
+
+.whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#20b96b;
+    color:white;
+
+    border-radius:9px;
+
+    padding:7px 10px;
+
+    font-size:9px;
+    font-weight:800;
+
+    white-space:nowrap;
+
+    transition:.2s;
+}
+
+.whatsapp-btn:hover{
+    background:#169a59;
+    transform:translateY(-1px);
+}
+
+/* =========================================================
+   POPULAR
+   ========================================================= */
+
+.featured{
+    background:
+        radial-gradient(circle at 85% 15%,rgba(109,74,255,.075),transparent 25%),
+        radial-gradient(circle at 10% 80%,rgba(33,167,255,.05),transparent 25%),
+        #f7f9fd;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+.product-card{
+    overflow:hidden;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+    border-radius:18px;
+
+    transition:.25s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.product-image{
+    height:155px;
+
+    display:grid;
+    place-items:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.product-image.netflix{
+    background:linear-gradient(145deg,#100b0c,#31070a);
+}
+
+.product-image.chatgpt{
+    background:linear-gradient(145deg,#071b16,#0e4032);
+}
+
+.product-image.gemini{
+    background:linear-gradient(145deg,#101b47,#273e9c);
+}
+
+.product-image.apple{
+    background:linear-gradient(145deg,#dceaff,#f7fbff);
+}
+
+.product-brand{
+    font-size:27px;
+    font-weight:900;
+    letter-spacing:-1px;
+}
+
+.netflix .product-brand{
+    color:#e50914;
+}
+
+.chatgpt .product-brand{
+    color:#63d5b1;
+}
+
+.gemini .product-brand{
+    color:#fff;
+}
+
+.apple .product-brand{
+    color:#1d2737;
+}
+
+.product-body{
+    padding:15px;
+}
+
+.product-body h3{
+    font-size:14px;
+}
+
+.product-body p{
+    color:var(--muted);
+    font-size:10px;
+    margin:3px 0 13px;
+}
+
+.product-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+}
+
+.from-price{
+    font-size:11px;
+    font-weight:800;
+}
+
+.small-order{
+    background:var(--blue);
+    color:#fff;
+
+    border-radius:9px;
+
+    padding:7px 10px;
+
+    font-size:9px;
+    font-weight:800;
+}
+
+/* =========================================================
+   APPLE SECTION
+   ========================================================= */
+
+.apple-section{
+    background:
+        radial-gradient(circle at 10% 30%,rgba(33,167,255,.04),transparent 25%),
+        #fff;
+}
+
+.apple-box{
+    background:
+        radial-gradient(circle at 80% 30%,rgba(61,139,255,.22),transparent 25%),
+        linear-gradient(135deg,#0b234d,#123d80);
+
+    color:#fff;
+
+    border-radius:26px;
+
+    padding:38px;
+
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:35px;
+    align-items:center;
+
+    overflow:hidden;
+    position:relative;
+
+    box-shadow:0 25px 60px rgba(11,47,114,.17);
+}
+
+.apple-copy{
+    position:relative;
+    z-index:2;
+}
+
+.apple-copy .mini{
+    color:#78bcff;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:1.4px;
+}
+
+.apple-copy h2{
+    font-size:30px;
+    line-height:1.4;
+    margin:7px 0 10px;
+}
+
+.apple-copy p{
+    color:#c6d7f1;
+    font-size:12px;
+}
+
+.apple-visual{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    position:relative;
+    z-index:2;
+}
+
+.apple-tile{
+    min-height:120px;
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    text-align:center;
+}
+
+.apple-tile strong{
+    font-size:12px;
+}
+
+.apple-tile span{
+    font-size:9px;
+    color:#b9cae2;
+}
+
+.apple-symbol{
+    width:45px;
+    height:45px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:13px;
+
+    background:#fff;
+    color:#111827;
+
+    font-size:20px;
+    font-weight:800;
+}
+
+/* =========================================================
+   WHY
+   ========================================================= */
+
+.why{
+    background:
+        radial-gradient(circle at 90% 20%,rgba(109,74,255,.045),transparent 25%),
+        linear-gradient(180deg,#f8faff,#fff);
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.why-card{
+    background:rgba(255,255,255,.9);
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:22px;
+}
+
+.why-icon{
+    width:42px;
+    height:42px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:12px;
+
+    background:var(--blue-soft);
+    color:var(--blue);
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}
+
+.why-card h3{
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+.why-card p{
+    color:var(--muted);
+    font-size:10px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.cta{
+    padding:45px 0 70px;
+    background:
+        radial-gradient(circle at 20% 50%,rgba(33,167,255,.05),transparent 25%),
+        #fff;
+}
+
+.cta-box{
+    background:
+        radial-gradient(circle at 80% 20%,rgba(70,155,255,.2),transparent 25%),
+        linear-gradient(135deg,#0d2d69,#1769e8);
+
+    border-radius:25px;
+
+    padding:38px 45px;
+
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:30px;
+
+    box-shadow:0 20px 45px rgba(23,105,232,.18);
+}
+
+.cta-box h2{
+    font-size:26px;
+}
+
+.cta-box p{
+    color:#cfe0f8;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.cta .btn{
+    background:#fff;
+    color:var(--blue);
+    flex-shrink:0;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    background:#0c172b;
+    color:#fff;
+    padding:45px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:30px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:800;
+    direction:ltr;
+    width:max-content;
+}
+
+.footer-description{
+    color:#9ba9bf;
+    font-size:11px;
+    max-width:380px;
+    margin-top:12px;
+    line-height:1.9;
+}
+
+.footer-title{
+    font-size:12px;
+    margin-bottom:12px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+    color:#a7b3c6;
+    font-size:10px;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-top:20px;
+    color:#738198;
+    font-size:9px;
+    text-align:center;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:1000px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .hero-content{
+        max-width:700px;
+        margin:auto;
+        text-align:center;
+    }
+
+    .hero-text{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-actions{
+        justify-content:center;
+    }
+
+    .hero-visual{
+        width:500px;
+        max-width:100%;
+        margin:auto;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .featured-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .apple-box{
+        grid-template-columns:1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .trust-item:nth-child(2){
+        border-left:0;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:600px){
+
+    .navbar{
+        min-height:68px;
+    }
+
+    .logo{
+        font-size:21px;
+    }
+
+    .logo-mark{
+        width:36px;
+        height:36px;
+        font-size:21px;
+        border-radius:11px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-button{
+        padding:9px 13px;
+        font-size:11px;
+    }
+
+    .hero{
+        padding:48px 0 40px;
+    }
+
+    .hero h1{
+        font-size:35px;
+        letter-spacing:-1px;
+    }
+
+    .hero-text{
+        font-size:13px;
+    }
+
+    .hero-visual{
+        min-height:390px;
+        width:100%;
+    }
+
+    .visual-main{
+        width:315px;
+        height:350px;
+    }
+
+    .visual-title{
+        top:22px;
+        right:23px;
+        font-size:12px;
+    }
+
+    .quick-service{
+        width:63px;
+        height:63px;
+        border-radius:17px;
+    }
+
+    .quick-service .icon{
+        width:29px;
+        height:29px;
+    }
+
+    .quick-service .label{
+        font-size:7px;
+    }
+
+    .icon-apple{
+        top:70px;
+        right:42px;
+    }
+
+    .icon-premium{
+        top:150px;
+        right:119px;
+    }
+
+    .icon-transfer{
+        top:82px;
+        left:35px;
+    }
+
+    .icon-usdt{
+        bottom:45px;
+        left:50px;
+    }
+
+    .icon-gift{
+        bottom:42px;
+        right:42px;
+    }
+
+    .orbit-one{
+        width:220px;
+        height:140px;
+        left:47px;
+        top:105px;
+    }
+
+    .orbit-two{
+        width:240px;
+        height:160px;
+        left:38px;
+        top:93px;
+    }
+
+    .orbit-three{
+        width:145px;
+        height:145px;
+        left:85px;
+        top:105px;
+    }
+
+    .floating-card{
+        padding:9px 11px;
+        font-size:9px;
+    }
+
+    .float-one{
+        top:15px;
+        left:0;
+    }
+
+    .float-two{
+        bottom:15px;
+        left:0;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+    .section-title{
+        font-size:23px;
+    }
+
+    .section-head{
+        align-items:flex-start;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .product-image{
+        height:120px;
+    }
+
+    .product-brand{
+        font-size:21px;
+    }
+
+    .product-body{
+        padding:11px;
+    }
+
+    .product-body h3{
+        font-size:12px;
+    }
+
+    .small-order{
+        padding:6px 8px;
+    }
+
+    .product-row{
+        grid-template-columns:1fr auto;
+    }
+
+    .product-row .whatsapp-btn{
+        grid-column:2;
+        grid-row:1;
+    }
+
+    .price{
+        grid-column:1;
+        grid-row:2;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-item{
+        min-height:78px;
+        border-bottom:1px solid var(--border);
+    }
+
+    .trust-item:nth-child(3){
+        border-left:1px solid var(--border);
+    }
+
+    .apple-box{
+        padding:25px 20px;
+        border-radius:20px;
+    }
+
+    .apple-copy h2{
+        font-size:24px;
+    }
+
+    .apple-visual{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+
+    .apple-tile{
+        min-height:95px;
+    }
+
+    .apple-tile strong{
+        font-size:10px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .cta-box{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:28px 22px;
+    }
+
+    .cta-box h2{
+        font-size:22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+    <div class="logo-mark">P</div>
+    <div class="logo-name">Pay<span>ou</span></div>
+</a>
+
+<nav class="nav-links">
+    <a href="#home">الرئيسية</a>
+    <a href="#services">الخدمات</a>
+    <a href="#popular">الأكثر طلبًا</a>
+    <a href="#why">لماذا Payou؟</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<a class="nav-button" href="#services">
+    استكشف الخدمات
+</a>
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<!-- RIGHT SIDE -->
+
+<div class="hero-content">
+
+<div class="hero-badge">
+    <i></i>
+    خدمات رقمية سريعة وموثوقة
+</div>
+
+<h1>
+    كل خدماتك الرقمية
+    <span class="blue">في مكان واحد.</span>
+</h1>
+
+<p class="hero-text">
+    أكواد وبطاقات، اشتراكات وتطبيقات، خدمات Apple،
+    تحويلات، USDT وخدمات رقمية أخرى — كل ما تحتاجه
+    بطريقة بسيطة وسريعة.
+</p>
+
+<div class="hero-actions">
+
+<a href="#services" class="btn btn-primary">
+    استكشف الخدمات
+    <span>←</span>
+</a>
+
+<a href="https://wa.me/201015065426" class="btn btn-outline">
+    واتساب
+    <span>↗</span>
+</a>
+
+</div>
+
+</div>
+
+
+<!-- LEFT VISUAL -->
+
+<div class="hero-visual">
+
+<div class="visual-main">
+
+<div class="visual-title">
+    خدمات <span>Payou</span>
+</div>
+
+
+<!-- ORBITS -->
+
+<div class="orbit orbit-one"></div>
+<div class="orbit orbit-two"></div>
+<div class="orbit orbit-three"></div>
+
+
+<!-- =====================================================
+     APPLE
+     ===================================================== -->
+
+<a href="#apple"
+   class="quick-service icon-apple"
+   onclick="openService('apple');return false;"
+   title="خدمات Apple">
+
+    <span class="icon">
+
+        <svg viewBox="0 0 64 64" fill="none">
+            <path
+                d="M42.5 33.5c0-5.7 4.7-8.4 4.9-8.5-2.7-4-6.9-4.5-8.4-4.6-3.6-.4-7.1 2.1-8.9 2.1-1.9 0-4.7-2.1-7.8-2-4 .1-7.7 2.3-9.8 5.9-4.2 7.3-1.1 18.1 3 24 2 2.9 4.4 6.1 7.6 6 3-.1 4.1-1.9 7.7-1.9 3.6 0 4.6 1.9 7.7 1.8 3.2-.1 5.2-2.9 7.2-5.8 2.3-3.3 3.2-6.5 3.2-6.7-.1 0-6.4-2.5-6.4-10.3ZM36.7 16.6c1.6-2 2.7-4.7 2.4-7.4-2.4.1-5.3 1.6-7 3.5-1.5 1.7-2.8 4.5-2.5 7.1 2.7.2 5.5-1.3 7.1-3.2Z"
+                fill="white"
+            />
+        </svg>
+
+    </span>
+
+    <span class="label">Apple</span>
+
+</a>
+
+
+<!-- =====================================================
+     PREMIUM
+     ===================================================== -->
+
+<a href="#subscriptions"
+   class="quick-service icon-premium"
+   onclick="openService('subscriptions');return false;"
+   title="الاشتراكات">
+
+    <span class="icon">
+
+        <svg viewBox="0 0 64 64" fill="none">
+
+            <path
+                d="M32 7l6.7 15.8L56 25l-12 11.4L47 53 32 44.4 17 53l3-16.6L8 25l17.3-2.2L32 7Z"
+                fill="white"
+                opacity=".97"
+            />
+
+        </svg>
+
+    </span>
+
+    <span class="label">الاشتراكات</span>
+
+</a>
+
+
+<!-- =====================================================
+     TRANSFERS
+     ===================================================== -->
+
+<a href="#transfers"
+   class="quick-service icon-transfer"
+   onclick="openService('transfers');return false;"
+   title="التحويلات">
+
+    <span class="icon">
+
+        <svg viewBox="0 0 64 64" fill="none">
+
+            <path
+                d="M12 22h34"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+            />
+
+            <path
+                d="M38 13l10 9-10 9"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+
+            <path
+                d="M52 42H18"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+            />
+
+            <path
+                d="M26 33l-10 9 10 9"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+
+        </svg>
+
+    </span>
+
+    <span class="label">التحويلات</span>
+
+</a>
+
+
+<!-- =====================================================
+     USDT
+     ===================================================== -->
+
+<a href="#usdt"
+   class="quick-service icon-usdt"
+   onclick="openService('usdt');return false;"
+   title="USDT">
+
+    <span class="icon">
+
+        <svg viewBox="0 0 64 64" fill="none">
+
+            <circle
+                cx="32"
+                cy="32"
+                r="29"
+                fill="rgba(255,255,255,.08)"
+            />
+
+            <path
+                d="M17 15h30v7H17v-7Zm15 7v27"
+                stroke="white"
+                stroke-width="5"
+                stroke-linecap="round"
+            />
+
+            <path
+                d="M20 28c3 2.5 8 3.7 12 3.7s9-1.2 12-3.7"
+                stroke="white"
+                stroke-width="4"
+                stroke-linecap="round"
+            />
+
+            <path
+                d="M21 38c3.1 2.6 7 3.8 11 3.8s7.9-1.2 11-3.8"
+                stroke="white"
+                stroke-width="4"
+                stroke-linecap="round"
+            />
+
+        </svg>
+
+    </span>
+
+    <span class="label">USDT</span>
+
+</a>
+
+
+<!-- =====================================================
+     GIFT CARDS
+     ===================================================== -->
+
+<a href="#giftcards"
+   class="quick-service icon-gift"
+   onclick="openService('giftcards');return false;"
+   title="الأكواد والبطاقات">
+
+    <span class="icon">
+
+        <svg viewBox="0 0 64 64" fill="none">
+
+            <rect
+                x="10"
+                y="20"
+                width="44"
+                height="34"
+                rx="7"
+                fill="white"
+                opacity=".96"
+            />
+
+            <path
+                d="M32 20v34"
+                stroke="#2d67ed"
+                stroke-width="5"
+            />
+
+            <path
+                d="M10 32h44"
+                stroke="#2d67ed"
+                stroke-width="5"
+            />
+
+            <path
+                d="M31 20c-7 0-12-3-12-7 0-3 2.5-5 5.5-5 5.2 0 7 8 7 12Z"
+                fill="#2d67ed"
+            />
+
+            <path
+                d="M33 20c7 0 12-3 12-7 0-3-2.5-5-5.5-5-5.2 0-7 8-7 12Z"
+                fill="#2d67ed"
+            />
+
+        </svg>
+
+    </span>
+
+    <span class="label">الأكواد والبطاقات</span>
+
+</a>
+
+</div>
+
+
+<!-- FLOATING CARDS -->
+
+<div class="floating-card float-one">
+
+    <div class="float-icon">⚡</div>
+
+    <div>
+        تنفيذ سريع
+        <small>خدمة مباشرة</small>
+    </div>
+
+</div>
+
+
+<div class="floating-card float-two">
+
+    <div class="float-icon">✓</div>
+
+    <div>
+        طلبك عبر واتساب
+        <small>بخطوات بسيطة</small>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     TRUST
+     ========================================================= -->
+
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div class="trust-item">
+
+    <div class="trust-icon">⚡</div>
+
+    <div>
+        <strong>سرعة في التنفيذ</strong>
+        <span>بدون خطوات معقدة</span>
+    </div>
+
+</div>
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">✓</div>
+
+    <div>
+        <strong>تعامل مباشر</strong>
+        <span>اطلب عبر WhatsApp</span>
+    </div>
+
+</div>
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">◎</div>
+
+    <div>
+        <strong>خدمات متعددة</strong>
+        <span>كل احتياجاتك الرقمية</span>
+    </div>
+
+</div>
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">◌</div>
+
+    <div>
+        <strong>دعم مستمر</strong>
+        <span>نساعدك قبل الطلب وبعده</span>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+
+<section class="services-section" id="services">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+    <div class="section-label">
+        PAYOU SERVICES
+    </div>
+
+    <h2 class="section-title">
+        الخدمات التي نقدمها
+    </h2>
+
+    <p class="section-subtitle">
+        اضغط على أي خدمة لعرض التفاصيل والأسعار والطلبات
+    </p>
+
+</div>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<!-- GIFT CARDS -->
+
+<article class="service-card" id="giftcards">
+
+<div class="service-top blue-bg">
+    <div class="service-symbol s-blue">▣</div>
+</div>
+
+<div class="service-content">
+
+<h3>الأكواد والبطاقات</h3>
+
+<p>
+Gift Cards وأكواد رقمية لمختلف الخدمات والمنصات.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض المنتجات
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 150 جنيه</strong>
+<span>رصيد 150 جنيه</span>
+</div>
+
+<div class="price">250 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20150%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 200 جنيه</strong>
+<span>رصيد 200 جنيه</span>
+</div>
+
+<div class="price">300 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20200%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 250 جنيه</strong>
+<span>رصيد 250 جنيه</span>
+</div>
+
+<div class="price">350 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20250%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 300 جنيه</strong>
+<span>رصيد 300 جنيه</span>
+</div>
+
+<div class="price">400 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20300%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 400 جنيه</strong>
+<span>رصيد 400 جنيه</span>
+</div>
+
+<div class="price">550 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20400%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Apple Gift Card — 500 جنيه</strong>
+<span>رصيد 500 جنيه</span>
+</div>
+
+<div class="price">700 جنيه</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card%20بقيمة%20500%20جنيه">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SUBSCRIPTIONS -->
+
+<article class="service-card" id="subscriptions">
+
+<div class="service-top purple-bg">
+    <div class="service-symbol s-purple">★</div>
+</div>
+
+<div class="service-content">
+
+<h3>الاشتراكات والتطبيقات</h3>
+
+<p>
+اشتراكات Premium للتطبيقات والمنصات الرقمية.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض المنتجات
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>ChatGPT Premium</strong>
+<span>اشتراك حسب الباقة</span>
+</div>
+
+<div class="price">حسب الباقة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20ChatGPT">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Gemini Premium</strong>
+<span>اشتراك Premium</span>
+</div>
+
+<div class="price">حسب الباقة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20Gemini">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Netflix</strong>
+<span>باقات ترفيهية</span>
+</div>
+
+<div class="price">حسب الباقة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20Netflix">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>اشتراكات التطبيقات</strong>
+<span>تطبيقات وخدمات Premium</span>
+</div>
+
+<div class="price">حسب الخدمة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20تطبيق">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- APPLE -->
+
+<article class="service-card" id="apple">
+
+<div class="service-top dark-bg">
+    <div class="service-symbol s-dark"></div>
+</div>
+
+<div class="service-content">
+
+<h3>خدمات Apple</h3>
+
+<p>
+App Store و iCloud والمشتريات والخدمات المرتبطة بأجهزة Apple.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض الخدمات
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>زيادة مساحة iCloud</strong>
+<span>ترقية مساحة التخزين</span>
+</div>
+
+<div class="price">حسب المساحة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20زيادة%20مساحة%20iCloud">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>App Store</strong>
+<span>رصيد ومشتريات التطبيقات</span>
+</div>
+
+<div class="price">حسب الطلب</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20خدمة%20App%20Store">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>المشتريات داخل التطبيقات</strong>
+<span>In-App Purchases</span>
+</div>
+
+<div class="price">حسب الطلب</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20شراء%20داخل%20تطبيق">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>خدمات Apple أخرى</strong>
+<span>اسألنا عن الخدمة المطلوبة</span>
+</div>
+
+<div class="price">حسب الخدمة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20لدي%20طلب%20خاص%20بخدمات%20Apple">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- TRANSFERS -->
+
+<article class="service-card" id="transfers">
+
+<div class="service-top green-bg">
+    <div class="service-symbol s-green">↔</div>
+</div>
+
+<div class="service-content">
+
+<h3>التحويلات والدفع</h3>
+
+<p>
+خدمات تحويل الرصيد بين وسائل الدفع والمحافظ الإلكترونية.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض الخدمات
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>Vodafone Cash → InstaPay</strong>
+<span>تحويل بين وسائل الدفع</span>
+</div>
+
+<div class="price">عمولة حسب المبلغ</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20تحويل%20من%20Vodafone%20Cash%20إلى%20InstaPay">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>InstaPay → Vodafone Cash</strong>
+<span>تحويل بين وسائل الدفع</span>
+</div>
+
+<div class="price">عمولة حسب المبلغ</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20تحويل%20من%20InstaPay%20إلى%20Vodafone%20Cash">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>تحويلات ومحافظ أخرى</strong>
+<span>اسألنا عن المتاح</span>
+</div>
+
+<div class="price">حسب الخدمة</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20خدمة%20تحويل%20أخرى">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- USDT -->
+
+<article class="service-card" id="usdt">
+
+<div class="service-top cyan-bg">
+    <div class="service-symbol s-cyan">₮</div>
+</div>
+
+<div class="service-content">
+
+<h3>USDT والعملات الرقمية</h3>
+
+<p>
+توفير USDT وتحويل العملات إلى USDT حسب المتاح.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض الخدمات
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>EGP → USDT</strong>
+<span>تحويل من الجنيه المصري</span>
+</div>
+
+<div class="price">حسب السعر</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20تحويل%20EGP%20إلى%20USDT">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>عملة أجنبية → USDT</strong>
+<span>اسأل عن العملات المتاحة</span>
+</div>
+
+<div class="price">حسب السعر</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20تحويل%20عملة%20إلى%20USDT">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>USDT — استفسار</strong>
+<span>للسعر والكمية المتاحة</span>
+</div>
+
+<div class="price">تواصل معنا</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20الاستفسار%20عن%20USDT">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SPECIAL -->
+
+<article class="service-card" id="special">
+
+<div class="service-top orange-bg">
+    <div class="service-symbol s-orange">✦</div>
+</div>
+
+<div class="service-content">
+
+<h3>خدمات خاصة</h3>
+
+<p>
+عندك طلب رقمي مش موجود في الأقسام؟ تواصل معنا مباشرة.
+</p>
+
+<button class="service-trigger" onclick="toggleService(this)">
+    عرض الخدمة
+    <span>⌄</span>
+</button>
+
+</div>
+
+<div class="service-details">
+
+<div class="product-list">
+
+<div class="product-row">
+
+<div class="product-info">
+<strong>طلب خدمة خاصة</strong>
+<span>اشرح لنا ما تحتاجه</span>
+</div>
+
+<div class="price">حسب الطلب</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20لدي%20طلب%20خدمة%20خاصة">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     POPULAR
+     ========================================================= -->
+
+<section class="featured" id="popular">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="section-label">
+    POPULAR
+</div>
+
+<h2 class="section-title">
+    الأكثر طلبًا
+</h2>
+
+<p class="section-subtitle">
+    خدمات ومنتجات يطلبها العملاء بشكل متكرر
+</p>
+
+</div>
+
+<a href="#services" class="section-link">
+    عرض كل الخدمات ←
+</a>
+
+</div>
+
+
+<div class="featured-grid">
+
+
+<div class="product-card">
+
+<div class="product-image netflix">
+    <div class="product-brand">NETFLIX</div>
+</div>
+
+<div class="product-body">
+
+<h3>اشتراك Netflix</h3>
+<p>خدمات ترفيهية رقمية</p>
+
+<div class="product-bottom">
+
+<div class="from-price">
+    اطلب السعر
+</div>
+
+<a class="small-order"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20Netflix">
+    اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image chatgpt">
+    <div class="product-brand">ChatGPT</div>
+</div>
+
+<div class="product-body">
+
+<h3>ChatGPT Premium</h3>
+<p>اشتراك وخدمات AI</p>
+
+<div class="product-bottom">
+
+<div class="from-price">
+    اطلب السعر
+</div>
+
+<a class="small-order"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20ChatGPT">
+    اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image gemini">
+    <div class="product-brand">Gemini</div>
+</div>
+
+<div class="product-body">
+
+<h3>Gemini Premium</h3>
+<p>خدمات الذكاء الاصطناعي</p>
+
+<div class="product-bottom">
+
+<div class="from-price">
+    اطلب السعر
+</div>
+
+<a class="small-order"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20اشتراك%20Gemini">
+    اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image apple">
+    <div class="product-brand"> Apple</div>
+</div>
+
+<div class="product-body">
+
+<h3>Apple Gift Card</h3>
+<p>بطاقات Apple الرقمية</p>
+
+<div class="product-bottom">
+
+<div class="from-price">
+    من 250 جنيه
+</div>
+
+<a class="small-order"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20Apple%20Gift%20Card">
+    اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     APPLE FEATURE
+     ========================================================= -->
+
+<section class="apple-section">
+
+<div class="container">
+
+<div class="apple-box">
+
+<div class="apple-copy">
+
+<div class="mini">
+    APPLE DIGITAL SERVICES
+</div>
+
+<h2>
+    كل خدمات Apple
+    <br>
+    في مكان واحد
+</h2>
+
+<p>
+    بطاقات Apple، App Store، iCloud، المشتريات داخل التطبيقات
+    وغيرها من الخدمات الرقمية — اطلب الخدمة المناسبة لك مباشرة.
+</p>
+
+<br>
+
+<a class="btn btn-primary"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20أريد%20الاستفسار%20عن%20خدمات%20Apple">
+    اطلب عبر WhatsApp
+</a>
+
+</div>
+
+
+<div class="apple-visual">
+
+<div class="apple-tile">
+
+<div class="apple-symbol">
+    
+</div>
+
+<strong>Gift Cards</strong>
+
+<span>
+    بطاقات Apple
+</span>
+
+</div>
+
+
+<div class="apple-tile">
+
+<div class="apple-symbol">
+    ☁
+</div>
+
+<strong>iCloud</strong>
+
+<span>
+    مساحة إضافية
+</span>
+
+</div>
+
+
+<div class="apple-tile">
+
+<div class="apple-symbol">
+    A
+</div>
+
+<strong>App Store</strong>
+
+<span>
+    تطبيقات ومشتريات
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY
+     ========================================================= -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="section-label">
+    WHY PAYOU
+</div>
+
+<h2 class="section-title">
+    ليه تختار Payou؟
+</h2>
+
+<p class="section-subtitle">
+    تجربة بسيطة من اختيار الخدمة لحد تنفيذ الطلب.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">
+    ⚡
+</div>
+
+<h3>
+    تنفيذ سريع
+</h3>
+
+<p>
+    بنحاول ننجز طلبك في أسرع وقت ممكن حسب نوع الخدمة.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+    ✓
+</div>
+
+<h3>
+    طلب واضح
+</h3>
+
+<p>
+    اختار الخدمة والمنتج وابعت الطلب مباشرة على WhatsApp.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+    ▣
+</div>
+
+<h3>
+    خدمات متنوعة
+</h3>
+
+<p>
+    بطاقات، اشتراكات، Apple، تحويلات، USDT وخدمات خاصة.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+    ◌
+</div>
+
+<h3>
+    تواصل مباشر
+</h3>
+
+<p>
+    لو مش لاقي الخدمة، ابعت لنا ونشوف إمكانية توفيرها.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<div class="cta-box">
+
+<div>
+
+<h2>
+    مش لاقي الخدمة اللي محتاجها؟
+</h2>
+
+<p>
+    ابعت لنا طلبك على WhatsApp ونساعدك في معرفة المتاح.
+</p>
+
+</div>
+
+
+<a class="btn"
+href="https://wa.me/201015065426?text=مرحباً%20Payou%2C%20لدي%20طلب%20خدمة%20غير%20موجودة%20في%20الموقع">
+
+تواصل معنا عبر WhatsApp →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-logo">
+
+<div class="logo-mark">
+    P
+</div>
+
+<span>
+    Payou
+</span>
+
+</div>
+
+<p class="footer-description">
+
+منصة للخدمات الرقمية تساعدك في الوصول إلى الأكواد،
+البطاقات، الاشتراكات، خدمات Apple وغيرها من الخدمات
+الرقمية بطريقة بسيطة ومباشرة.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3 class="footer-title">
+    روابط سريعة
+</h3>
+
+<div class="footer-links">
+
+<a href="#home">
+    الرئيسية
+</a>
+
+<a href="#services">
+    الخدمات
+</a>
+
+<a href="#popular">
+    الأكثر طلبًا
+</a>
+
+<a href="#why">
+    لماذا Payou؟
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3 class="footer-title">
+    تواصل معنا
+</h3>
+
+<div class="footer-links">
+
+<a href="https://wa.me/201015065426">
+    WhatsApp
+</a>
+
+<a href="#">
+    Instagram
+</a>
+
+<a href="#">
+    Telegram
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Payou — جميع الحقوق محفوظة.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+/* فتح وإغلاق تفاصيل الخدمة */
+
+function toggleService(button){
+
+    const card = button.closest(".service-card");
+
+    const isOpen = card.classList.contains("open");
+
+    document.querySelectorAll(".service-card.open").forEach(function(item){
+        item.classList.remove("open");
+    });
+
+    if(!isOpen){
+        card.classList.add("open");
+    }
+}
+
+
+/* الضغط على أي أيقونة في المربع */
+
+function openService(id){
+
+    const target = document.getElementById(id);
+
+    if(!target) return;
+
+    document.querySelectorAll(".service-card.open").forEach(function(card){
+        card.classList.remove("open");
+    });
+
+    target.classList.add("open");
+
+    setTimeout(function(){
+
+        target.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+    },150);
+}
+
+
+/* إغلاق الخدمة عند الضغط خارجها */
+
+document.addEventListener("click",function(event){
+
+    if(
+        !event.target.closest(".service-card") &&
+        !event.target.closest(".quick-service")
+    ){
+
+        document.querySelectorAll(".service-card.open").forEach(function(card){
+            card.classList.remove("open");
+        });
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
