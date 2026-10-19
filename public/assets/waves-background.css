@@ -1,0 +1,14 @@
+/* Approved blue waves background for the opening section. */
+body.waves-background .hero{position:relative;isolation:isolate;overflow:visible;margin-top:22px;min-height:510px;padding:28px 22px;gap:32px}
+body.waves-background .hero::before{content:"";position:absolute;inset:0 -15px;z-index:-2;border-radius:26px;background:#0e2037 url('/assets/backgrounds/blue-waves-v1.webp') center center/cover no-repeat;box-shadow:0 18px 60px #00000020;pointer-events:none}
+body.waves-background .hero::after{content:"";position:absolute;inset:0 -15px;z-index:-1;border-radius:26px;background:linear-gradient(270deg,#08172b80 0%,#0a1d334d 40%,#09182b1f 72%,#0a1a2e14 100%);pointer-events:none}
+body.waves-background .hero>.reveal,body.waves-background .hero>.art{position:relative;z-index:1}
+body.waves-background .hero h1{color:#f5f8ff;text-shadow:0 3px 18px #0004}
+body.waves-background .hero p{color:#d1e1f2}
+body.waves-background .hero-note,body.waves-background .hero .secondary{color:#c4d7ed}
+body.waves-background .hero .eyebrow{color:#add3ff}
+body.waves-background .hero .art .orb{border-color:#c7e2ff44;border-top-color:#d5eaffb3;background:radial-gradient(circle,#07182b2b,transparent 70%)}
+body.waves-background .hero .art .shortcut-grid .tile{background:linear-gradient(145deg,#263f59ed,#122841ed);border-color:#bfdbfb55;box-shadow:0 8px 24px #0005}
+body.waves-background .hero+.strip{margin-top:22px}
+@media(max-width:760px){body.waves-background .hero{margin-top:14px;padding:25px 8px 10px;gap:10px;min-height:0}body.waves-background .hero::before{inset:0 -5px;border-radius:20px;background-size:cover;background-position:28% center;background-color:#0d2038}body.waves-background .hero::after{inset:0 -5px;border-radius:20px;background:linear-gradient(180deg,#0b1d3266 0%,#0b1d325c 33%,#0b1d3229 65%,#0b1d324d 100%)}body.waves-background .hero>.reveal{padding-inline:9px}body.waves-background .hero>.art{margin-top:8px;margin-bottom:12px}body.waves-background .hero .actions{gap:12px}body.waves-background .hero+.strip{margin-top:14px}}
+@media(prefers-reduced-motion:reduce){body.waves-background .hero{scroll-behavior:auto}}

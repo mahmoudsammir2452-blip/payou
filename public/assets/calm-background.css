@@ -1,0 +1,6 @@
+/* A desktop-only atmospheric accent; retain the original opening on phones. */
+@media(min-width:1025px){
+ body.calm-preview .hero{position:relative;isolation:isolate}
+ body.calm-preview .hero::before{content:"";position:absolute;left:-35px;top:calc(50% - 165px);width:min(46%,480px);height:330px;z-index:-1;background:url('/assets/backgrounds/blue-waves-v1.webp') 15% center/cover no-repeat;opacity:.2;mask-image:radial-gradient(ellipse at center,#000 8%,transparent 72%);-webkit-mask-image:radial-gradient(ellipse at center,#000 8%,transparent 72%);pointer-events:none}
+}
+@media(max-width:1024px){body.calm-preview .hero::before,body.calm-preview .hero::after{display:none!important}}

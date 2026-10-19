@@ -1,0 +1,353 @@
+{
+  "tod": {
+    "name": "TOD by beIN",
+    "seller": "TOD for Advertising Production and Trade",
+    "source": "https://apps.apple.com/eg/app/tod-by-bein/id1585841527?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5b/aa/f0/5baaf060-14d4-a9bf-e747-c59197462b33/2064x2752_ipad_-1_EN.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/e5/cf/31e5cfe3-0fe9-78c3-cd5a-91d816cf5c0f/2064x2752_ipad_-2_EN.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/tod-0.jpg",
+      "/assets/products/tod-1.jpg"
+    ]
+  },
+  "capcut": {
+    "name": "CapCut: Photo & Video Editor",
+    "seller": "BYTEDANCE PTE. LTD.",
+    "source": "https://apps.apple.com/eg/app/capcut-photo-video-editor/id1500855883?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/1d/6e/5f1d6eff-7d77-f16e-1015-214dae5767e7/8e75a2dd-7d2e-437a-af9a-74450119792e_img12_92_0_en-US.jpg/576x768bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/44/82/3f4482a7-e808-58b7-5b13-f553a08167f3/e41f4e6c-6ad1-47c7-b058-da855b0f6eaa_img12_92_1_en-US.jpg/576x768bb.jpg"
+    ],
+    "files": [
+      "/assets/products/capcut-0.jpg",
+      "/assets/products/capcut-1.jpg"
+    ]
+  },
+  "spotify": {
+    "name": "Spotify: Music and Podcasts",
+    "seller": "Spotify",
+    "source": "https://apps.apple.com/eg/app/spotify-music-and-podcasts/id324684580?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/8f/9b/268f9b17-cbc1-17d5-d3c5-07740ad4b2ad/IOS_-_Ipad_12.9__-_S01_-_EN_-_GB.png/552x414bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/39/fd/0b39fd64-64c9-e9ae-bceb-af9d856672b9/IOS_-_Ipad_12.9__-_S02_-_EN_-_GB.png/552x414bb.png"
+    ],
+    "files": [
+      "/assets/products/spotify-0.jpg",
+      "/assets/products/spotify-1.jpg"
+    ]
+  },
+  "osn": {
+    "name": "OSN+",
+    "seller": "Anghami",
+    "source": "https://apps.apple.com/eg/app/osn/id862390640?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/66/5d/0d665d14-71ff-b195-fad5-cfa62c893c71/Ipad_Landscape_En_-_01.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/b1/f6/d3b1f614-e44d-b4d7-6330-aaa33c1bc10d/Ipad_Landscape_En_-_02.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/osn-0.jpg",
+      "/assets/products/osn-1.jpg"
+    ]
+  },
+  "watchit": {
+    "name": "WATCH IT: Drama,Movies",
+    "seller": "El Motaheda for Media Services",
+    "source": "https://apps.apple.com/eg/app/watch-it-drama-movies/id1462196003?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/67/79/c46779ff-3ae4-2ed4-fc4d-78cfa2597eb2/1.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/98/07/299807e5-8a11-5a57-f7df-369c5ed0ac85/2.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/watchit-0.jpg",
+      "/assets/products/watchit-1.jpg"
+    ]
+  },
+  "netflix": {
+    "name": "Netflix",
+    "seller": "Netflix, Inc.",
+    "source": "https://apps.apple.com/eg/app/netflix/id363590051?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/8b/c6/c38bc691-ed95-2682-5010-a3be0b3ee977/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_01_en-GB.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/82/db/df82db9c-3804-1d81-37ee-049f7104ff53/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_02_en-GB.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/netflix-0.jpg",
+      "/assets/products/netflix-1.jpg"
+    ]
+  },
+  "shahid": {
+    "name": "MBC Shahid",
+    "seller": "MBC Group",
+    "source": "https://apps.apple.com/eg/app/mbc-shahid/id879915134?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/61/33/3d6133f6-df1f-9373-859f-768ee32be8fe/Main-CPP_iPad_ENG_1.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/af/7f/2d/af7f2d4c-12ba-5263-6ef6-32daeceaf07f/Main-CPP_iPad_ENG_2.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/shahid-0.jpg",
+      "/assets/products/shahid-1.jpg"
+    ]
+  },
+  "chatgpt": {
+    "name": "ChatGPT",
+    "seller": "OpenAI OpCo, LLC",
+    "source": "https://apps.apple.com/eg/app/chatgpt/id6448311069?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/f7/b5/76f7b501-65e8-8003-275f-af4dce4cea60/1_iPad.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/c1/c5/58c1c543-6922-1e93-3c02-fd57cdb231f4/2_iPad.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/chatgpt-0.jpg",
+      "/assets/products/chatgpt-1.jpg"
+    ],
+    "app_icon_source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/23/eb/3023ebb0-1e40-6314-9909-f490a704b5d1/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+    "app_icon_file": "/assets/products/chatgpt-app-icon.png"
+  },
+  "disney": {
+    "name": "Disney+",
+    "seller": "Disney Electronic Content, Inc.",
+    "source": "https://apps.apple.com/eg/app/disney/id1446075923?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ee/73/88/ee7388bc-73a5-91ae-e5c2-57a3749c119d/01.EN-GB_Tablet_-_iOS_-_Home.jpg/552x414bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/7a/4d/3c7a4d18-21ad-9bc9-2cfd-4371a08da899/02.EN-GB_Tablet_-_iOS_-_Originals.jpg/552x414bb.jpg"
+    ],
+    "files": [
+      "/assets/products/disney-0.jpg",
+      "/assets/products/disney-1.jpg"
+    ]
+  },
+  "gemini": {
+    "name": "Google Gemini",
+    "seller": "Google LLC",
+    "source": "https://apps.apple.com/eg/app/google-gemini/id6477489729?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/c8/2b/bcc82b7d-b8fa-db51-0006-a8afa5ffbda5/APP_IPAD_PRO_3GEN_129-0.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/92/f7/6e/92f76e49-1124-89c1-1c27-3bf3194568eb/APP_IPAD_PRO_3GEN_129-1.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/gemini-0.jpg",
+      "/assets/products/gemini-1.jpg"
+    ],
+    "app_icon_source": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/69/2c/86692cd5-8c2d-c25f-8aaf-9cd1c7478d4a/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-0-0-85-220.png/512x512bb.jpg",
+    "app_icon_file": "/assets/products/gemini-app-icon.png"
+  },
+  "pubg": {
+    "name": "PUBG MOBILE",
+    "seller": "Tencent Mobile International Limited",
+    "source": "https://apps.apple.com/eg/app/pubg-mobile/id1330123889?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/d6/3c/8fd63caa-1c88-f0a3-cc16-18115868ded9/0.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/97/db/6d97db02-786e-c31c-4bda-ffe49702c4f0/1.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/pubg-0.jpg",
+      "/assets/products/pubg-1.jpg"
+    ]
+  },
+  "canva": {
+    "name": "Canva: AI Video & Photo Editor",
+    "seller": "Canva Pty Ltd",
+    "source": "https://apps.apple.com/eg/app/canva-ai-video-photo-editor/id897446215?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/20/f5/2d20f5d2-22fc-9bf6-d1fa-88eba72a960b/0.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b8/ee/ba/b8eebaa3-aedd-9225-d76a-10c820423534/1.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/canva-0.jpg",
+      "/assets/products/canva-1.jpg"
+    ]
+  },
+  "instapay": {
+    "name": "InstaPay Egypt",
+    "seller": "EGYPTIAN BANKS FOR TECHNOLOGICAL ADVANCEMENT",
+    "source": "https://apps.apple.com/eg/app/instapay-egypt/id1592108795?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/64/b3/2e/64b32e51-12b9-5107-4033-7627877590d5/66297bb0-a621-4f90-bf56-70c64c32165e_iPN_mobile_ads-06.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/3b/27/143b274c-00d8-bb1c-c8aa-13b094566efd/19be06b5-b364-43be-a15b-76d8e43b31eb_iPN_mobile_ads-07-01.png/392x696bb.png"
+    ],
+    "files": [
+      "/assets/products/instapay-0.jpg",
+      "/assets/products/instapay-1.jpg"
+    ]
+  },
+  "autodesk": {
+    "name": "AutoCAD",
+    "seller": "Autodesk",
+    "source": "https://apps.apple.com/eg/app/autocad/id393149734?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/72/da/88/72da8822-c6b9-cbbb-8449-f939bef7185c/407c194c-3a55-4728-a761-ec7340c5babf_iPad_2nd_Landscape_1.png/552x414bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/f0/24/90/f0249072-5c37-522f-d694-deed1e585001/0eab3115-2c26-4db5-8e99-d3a0150211dd_iPad_2nd_Landscape_2.png/552x414bb.png"
+    ],
+    "files": [
+      "/assets/products/autodesk-0.jpg",
+      "/assets/products/autodesk-1.jpg"
+    ]
+  },
+  "zoom": {
+    "name": "Zoom Workplace",
+    "seller": "Zoom Communications, Inc.",
+    "source": "https://apps.apple.com/eg/app/zoom-workplace/id546505307?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/fa/4e/17fa4ea9-ced6-6d7d-0d85-2a941d286960/ipad-01.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/d9/27/ebd927ce-1420-4f51-c226-fc403c7fbcb4/zoomate-02.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/zoom-0.jpg",
+      "/assets/products/zoom-1.jpg"
+    ]
+  },
+  "grok": {
+    "name": "Grok - AI Assistant",
+    "seller": "X Corp.",
+    "source": "https://apps.apple.com/eg/app/grok-ai-assistant/id6670324846?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/af/50/adaf5082-d29d-81d5-9277-d6614d37ac4d/Grok__SS1__U0028iPad_U0029.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/26/08/be26082a-4e1d-bab8-d3b3-3416fe0fdb3a/Grok__SS2__U0028iPad_U0029.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/grok-0.jpg",
+      "/assets/products/grok-1.jpg"
+    ]
+  },
+  "coursera": {
+    "name": "Coursera: Grow your career",
+    "seller": "Coursera, Inc.",
+    "source": "https://apps.apple.com/eg/app/coursera-grow-your-career/id736535961?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/a1/f1/3ea1f1e4-f9c7-ddfa-4cee-7bf3ca90006f/a46680c0-c213-4d45-8bf9-ed6bc4462dc2_0_APP_IPAD_PRO_3GEN_129_0.png/576x768bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/84/f8/2b84f817-34b2-7094-2814-396a373d2489/4664ca18-94e5-40ad-969a-fe91d0d58956_1_APP_IPAD_PRO_3GEN_129_1.png/576x768bb.png"
+    ],
+    "files": [
+      "/assets/products/coursera-0.jpg",
+      "/assets/products/coursera-1.jpg"
+    ]
+  },
+  "adobe-cc": {
+    "name": "Adobe Photoshop: Photo Editor",
+    "seller": "ADOBE SYSTEMS SOFTWARE IRELAND LIMITED",
+    "source": "https://apps.apple.com/eg/app/adobe-photoshop-photo-editor/id1457771281?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/59/99/5f59995d-93cc-7d7e-a009-1bcf76b81286/cf6219ca-e879-45f3-bc2b-fab17d2c82b4_01_Photoshop_ApplePencil_iPadPro12_2732x2048_GB.jpg/552x414bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2c/0c/39/2c0c3978-397e-605f-5144-b074f644d339/447e5b36-12f8-400d-8bba-1d62d39cc951_02_Photoshop_Raw_iPadPro12_2732x2048_GB.jpg/552x414bb.jpg"
+    ],
+    "files": [
+      "/assets/products/adobe-cc-0.jpg",
+      "/assets/products/adobe-cc-1.jpg"
+    ]
+  },
+  "adobe-express": {
+    "name": "Adobe Express: Create Anything",
+    "seller": "ADOBE SYSTEMS SOFTWARE IRELAND LIMITED",
+    "source": "https://apps.apple.com/eg/app/adobe-express-create-anything/id1051937863?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f9/3a/56/f93a56f9-e5a9-e90e-9f3b-036b5cf13d88/Adobe_Adobe-Express_UK_iOS_13_Screenshots_260309_01.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/41/25/55/41255514-c4e1-9aaa-a738-b683c38a3e12/Adobe_Adobe-Express_UK_iOS_13_Screenshots_260309_02.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/adobe-express-0.jpg",
+      "/assets/products/adobe-express-1.jpg"
+    ]
+  },
+  "claude": {
+    "name": "Claude by Anthropic",
+    "seller": "Anthropic PBC",
+    "source": "https://apps.apple.com/eg/app/claude-by-anthropic/id6473753684?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/b5/dc/06b5dcdd-1b62-8109-bfb0-5fb5b09874bc/UK.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/33/be/c733be19-c1cf-6034-1969-ef023ca0ff87/Voice_Mode.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/claude-0.jpg",
+      "/assets/products/claude-1.jpg"
+    ]
+  },
+  "youtube": {
+    "name": "YouTube",
+    "seller": "Google LLC",
+    "source": "https://apps.apple.com/eg/app/youtube/id544007664?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/5e/8f/335e8fb8-c08c-b714-0bf6-466919aed1e1/836dadfa-6bb1-4342-a93a-bdd7158a6dec_2048x2732bb__U00282_U0029.png/576x768bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/56/1a/9f561ac7-acdb-89e4-326d-b1acd2ffe3b4/iOS-iPad-Pro_2ndgen_1.jpg/576x768bb.jpg"
+    ],
+    "files": [
+      "/assets/products/youtube-0.jpg",
+      "/assets/products/youtube-1.jpg"
+    ]
+  },
+  "instagram": {
+    "name": "Instagram",
+    "seller": "Instagram, Inc.",
+    "source": "https://apps.apple.com/eg/app/instagram/id389801252?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/76/04/4d/76044de8-e420-2e6b-cea4-60821fb85156/10.5__Following_tab.png/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/33/ab/20/33ab20cf-dddf-ac3b-8634-e98ccffeb900/10.5__Home.png/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/instagram-0.jpg",
+      "/assets/products/instagram-1.jpg"
+    ]
+  },
+  "facebook": {
+    "name": "Facebook",
+    "seller": "Meta Platforms, Inc.",
+    "source": "https://apps.apple.com/eg/app/facebook/id284882215?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/8c/aa/d48caae2-9b6c-7ea1-ba50-06ff6ce94881/iPad2-Marketplace.png/576x768bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/75/16/d77516e3-9c90-0d18-782d-079244443f28/iPad2-Feed.png/576x768bb.png"
+    ],
+    "files": [
+      "/assets/products/facebook-0.jpg",
+      "/assets/products/facebook-1.jpg"
+    ]
+  },
+  "vodafone": {
+    "name": "Ana Vodafone",
+    "seller": "Vodafone International Services LLC",
+    "source": "https://apps.apple.com/eg/app/ana-vodafone/id437564823?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fa/ed/0d/faed0d86-4dd2-158d-7c61-855a29689abd/fc23fad2-7228-449b-a16b-26a51d3b80c6_Track.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/e8/64/2d/e8642de7-aa7e-7d6e-003a-6c44da1b9844/63a5946e-4735-4aee-a131-ec66d7470fdd_Old.png/392x696bb.png"
+    ],
+    "files": [
+      "/assets/products/vodafone-0.jpg",
+      "/assets/products/vodafone-1.jpg"
+    ]
+  },
+  "freefire": {
+    "name": "Free Fire x NARUTO SHIPPUDEN",
+    "seller": "GARENA INTERNATIONAL I PRIVATE LIMITED",
+    "source": "https://apps.apple.com/eg/app/free-fire-x-naruto-shippuden/id1300146617?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/62/98/88/62988857-1771-9c7d-3448-cd69f6303ec9/FFO_KV_2732x2048.jpg/360x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/76/97/5f/76975fdf-6311-361a-67fb-ed3a61b50058/FFO_01_2732x2048.jpg/360x480bb.jpg"
+    ],
+    "files": [
+      "/assets/products/freefire-0.jpg",
+      "/assets/products/freefire-1.jpg"
+    ]
+  },
+  "tiktok": {
+    "name": "TikTok - Videos, Music & LIVE",
+    "seller": "TIKTOK PTE. LTD.",
+    "source": "https://apps.apple.com/eg/app/tiktok-videos-music-live/id835599320?uo=4",
+    "image_sources": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fd/56/a6/fd56a634-ac12-ed70-e74d-360162f72cb2/db2f0a01-028f-4159-bb7f-8719b149c071_1.-cake-white.jpg/576x768bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/9f/f7/a89ff761-af76-c625-a27b-27fd1b80f230/4ab1f1f0-0316-4039-90f6-9ce710b62fee_2.-avocado-white.jpg/576x768bb.jpg"
+    ],
+    "files": [
+      "/assets/products/tiktok-0.jpg",
+      "/assets/products/tiktok-1.jpg"
+    ]
+  },
+  "apple-gift-card": {
+    "source": "https://www.apple.com/shop/gift-cards",
+    "image_sources": [
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/giftcard-og-202303?wid=800&hei=420&fmt=jpeg&qlt=85&.v=1679597545112"
+    ],
+    "files": [
+      "/assets/products/apple-gift-card-photo.jpg"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+/* Optional studio comparison, enabled only by ?preview=studio. */
+body.studio-preview .hero{position:relative;isolation:isolate;overflow:visible;margin-top:22px;min-height:510px;padding:28px 22px;gap:32px}
+body.studio-preview .hero::before{content:"";position:absolute;inset:0 -15px;z-index:-2;border-radius:26px;background:#0e2037 url('/assets/backgrounds/digital-studio-v1.webp') center center/cover no-repeat;box-shadow:0 18px 60px #00000020;pointer-events:none}
+body.studio-preview .hero::after{content:"";position:absolute;inset:0 -15px;z-index:-1;border-radius:26px;background:linear-gradient(270deg,#08172be8 0%,#0a1d33d1 36%,#09182b57 66%,#0a1a2e38 100%);pointer-events:none}
+body.studio-preview .hero>.reveal,body.studio-preview .hero>.art{position:relative;z-index:1}
+body.studio-preview .hero h1{color:#f5f8ff;text-shadow:0 3px 18px #0004}
+body.studio-preview .hero p{color:#d1e1f2}
+body.studio-preview .hero-note,body.studio-preview .hero .secondary{color:#c4d7ed}
+body.studio-preview .hero .eyebrow{color:#add3ff}
+body.studio-preview .hero .art .orb{border-color:#c7e2ff44;border-top-color:#d5eaffb3;background:radial-gradient(circle,#07182b2b,transparent 70%)}
+body.studio-preview .hero .art .shortcut-grid .tile{background:linear-gradient(145deg,#263f59ed,#122841ed);border-color:#bfdbfb55;box-shadow:0 8px 24px #0005}
+body.studio-preview .hero+.strip{margin-top:22px}
+@media(max-width:760px){body.studio-preview .hero{margin-top:14px;padding:25px 8px 10px;gap:10px;min-height:0}body.studio-preview .hero::before{inset:0 -5px;border-radius:20px;background-size:auto 375px;background-position:left bottom;background-color:#0d2038}body.studio-preview .hero::after{inset:0 -5px;border-radius:20px;background:linear-gradient(180deg,#0b1d32f5 0%,#0b1d32ed 29%,#0b1d326e 56%,#0b1d3294 100%)}body.studio-preview .hero>.reveal{padding-inline:9px}body.studio-preview .hero>.art{margin-top:8px;margin-bottom:12px}body.studio-preview .hero .actions{gap:12px}body.studio-preview .hero+.strip{margin-top:14px}}
+@media(prefers-reduced-motion:reduce){body.studio-preview .hero{scroll-behavior:auto}}

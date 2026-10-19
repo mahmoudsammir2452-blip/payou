@@ -1,0 +1,261 @@
+{
+  "osn": {
+    "name": "OSN+",
+    "seller": "Anghami",
+    "source": "https://apps.apple.com/eg/app/osn/id862390640?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/dd/43/23dd4315-93a4-cc19-b0c5-8fb9549917d1/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/osn-current-icon.png",
+    "version": "8.0.204",
+    "release_date": "2026-10-13T07:05:37Z"
+  },
+  "capcut": {
+    "name": "CapCut: Photo & Video Editor",
+    "seller": "BYTEDANCE PTE. LTD.",
+    "source": "https://apps.apple.com/eg/app/capcut-photo-video-editor/id1500855883?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/3f/96/5e3f9662-e690-3e55-e0b0-77da51f98fd2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/capcut-current-icon.png",
+    "version": "19.7.0",
+    "release_date": "2026-10-08T06:08:25Z"
+  },
+  "disney": {
+    "name": "Disney+",
+    "seller": "Disney Electronic Content, Inc.",
+    "source": "https://apps.apple.com/eg/app/disney/id1446075923?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/5c/3c/275c3cd1-638d-f7e6-160d-a047221f7672/AppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/disney-current-icon.png",
+    "version": "5.19.0",
+    "release_date": "2026-10-07T17:27:19Z"
+  },
+  "watchit": {
+    "name": "WATCH IT: Drama,Movies",
+    "seller": "El Motaheda for Media Services",
+    "source": "https://apps.apple.com/eg/app/watch-it-drama-movies/id1462196003?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/46/70/91467014-23be-4c2b-3972-a3ca3b8861ac/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/watchit-current-icon.png",
+    "version": "5.9.15",
+    "release_date": "2026-09-29T07:55:28Z"
+  },
+  "shahid": {
+    "name": "MBC Shahid",
+    "seller": "MBC Group",
+    "source": "https://apps.apple.com/eg/app/mbc-shahid/id879915134?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/42/fa/d242faad-9002-fc5e-e5e9-16a57e9d4330/AppIcon-0-0-1x_U007emarketing-0-0-0-11-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/shahid-current-icon.png",
+    "version": "8.9.0",
+    "release_date": "2026-10-06T10:43:45Z"
+  },
+  "chatgpt": {
+    "name": "ChatGPT",
+    "seller": "OpenAI OpCo, LLC",
+    "source": "https://apps.apple.com/eg/app/chatgpt/id6448311069?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/23/eb/3023ebb0-1e40-6314-9909-f490a704b5d1/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/chatgpt-current-icon.png",
+    "version": "1.2026.279",
+    "release_date": "2026-10-16T15:51:32Z"
+  },
+  "netflix": {
+    "name": "Netflix",
+    "seller": "Netflix, Inc.",
+    "source": "https://apps.apple.com/eg/app/netflix/id363590051?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/ed/5f/f6ed5f40-2e41-30c1-d6ff-8d12f8c67c3e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/netflix-current-icon.png",
+    "version": "26.1.0",
+    "release_date": "2026-10-12T16:04:15Z"
+  },
+  "gemini": {
+    "name": "Google Gemini",
+    "seller": "Google LLC",
+    "source": "https://apps.apple.com/eg/app/google-gemini/id6477489729?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/69/2c/86692cd5-8c2d-c25f-8aaf-9cd1c7478d4a/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/gemini-current-icon.png",
+    "version": "1.2026.4070303",
+    "release_date": "2026-10-14T12:34:35Z"
+  },
+  "spotify": {
+    "name": "Spotify: Music and Podcasts",
+    "seller": "Spotify",
+    "source": "https://apps.apple.com/eg/app/spotify-music-and-podcasts/id324684580?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/af/e8/b2afe87d-2d6a-8e4b-01bf-73b5752996dc/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/spotify-current-icon.png",
+    "version": "9.1.90",
+    "release_date": "2026-10-08T07:37:17Z"
+  },
+  "tod": {
+    "name": "TOD by beIN",
+    "seller": "TOD for Advertising Production and Trade",
+    "source": "https://apps.apple.com/eg/app/tod-by-bein/id1585841527?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/30/2a/a6302a24-4c06-18cf-01a5-289291cae789/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/tod-current-icon.png",
+    "version": "26.8.0",
+    "release_date": "2026-09-27T08:18:00Z"
+  },
+  "claude": {
+    "name": "Claude by Anthropic",
+    "seller": "Anthropic PBC",
+    "source": "https://apps.apple.com/eg/app/claude-by-anthropic/id6473753684?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/22/d1/a422d187-52f2-ec6f-bb2d-87d3558373e6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/claude-current-icon.png",
+    "version": "1.261016.20",
+    "release_date": "2026-10-17T23:27:06Z"
+  },
+  "pubg": {
+    "name": "PUBG MOBILE",
+    "seller": "Tencent Mobile International Limited",
+    "source": "https://apps.apple.com/eg/app/pubg-mobile/id1330123889?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6d/98/24/6d9824dd-f75f-9bd6-221e-33324fedecb2/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/pubg-current-icon.png",
+    "version": "4.6.0",
+    "release_date": "2026-09-09T10:00:58Z"
+  },
+  "grok": {
+    "name": "Grok - AI Assistant",
+    "seller": "X Corp.",
+    "source": "https://apps.apple.com/eg/app/grok-ai-assistant/id6670324846?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/d2/cd/62d2cdff-0836-ab72-bb3a-1cb4e78d01b8/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/grok-current-icon.png",
+    "version": "1.4.55",
+    "release_date": "2026-10-17T10:56:43Z"
+  },
+  "adobe-express": {
+    "name": "Adobe Express: Create Anything",
+    "seller": "ADOBE SYSTEMS SOFTWARE IRELAND LIMITED",
+    "source": "https://apps.apple.com/eg/app/adobe-express-create-anything/id1051937863?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/44/2b/c4442bdc-3955-4337-e423-b89edcd8322e/AppIconSpark-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/adobe-express-current-icon.png",
+    "version": "31.1.0",
+    "release_date": "2026-09-25T16:04:08Z"
+  },
+  "adobe-cc": {
+    "name": "Adobe Photoshop: Photo Editor",
+    "seller": "ADOBE SYSTEMS SOFTWARE IRELAND LIMITED",
+    "source": "https://apps.apple.com/eg/app/adobe-photoshop-photo-editor/id1457771281?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/da/1e/d4da1efa-c555-2344-1919-93100e2b18da/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/adobe-cc-current-icon.png",
+    "version": "7.8.2",
+    "release_date": "2026-08-25T23:59:30Z"
+  },
+  "zoom": {
+    "name": "Zoom Workplace",
+    "seller": "Zoom Communications, Inc.",
+    "source": "https://apps.apple.com/eg/app/zoom-workplace/id546505307?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/db/26/6edb2659-ba47-1968-f869-19cb59cb11f3/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/zoom-current-icon.png",
+    "version": "7.2.1",
+    "release_date": "2026-09-28T16:44:55Z"
+  },
+  "autodesk": {
+    "name": "AutoCAD",
+    "seller": "Autodesk",
+    "source": "https://apps.apple.com/eg/app/autocad/id393149734?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/76/87/7f/76877f05-07d8-de8b-274c-6681f3ace41f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/autodesk-current-icon.png",
+    "version": "6.24.0",
+    "release_date": "2026-08-04T23:34:05Z"
+  },
+  "canva": {
+    "name": "Canva: AI Video & Photo Editor",
+    "seller": "Canva Pty Ltd",
+    "source": "https://apps.apple.com/eg/app/canva-ai-video-photo-editor/id897446215?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/52/3c/54523c58-1b89-579a-2b94-c1d09baeb17b/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/canva-current-icon.png",
+    "version": "4.231.0",
+    "release_date": "2026-10-14T00:59:35Z"
+  },
+  "coursera": {
+    "name": "Coursera: Grow your career",
+    "seller": "Coursera, Inc.",
+    "source": "https://apps.apple.com/eg/app/coursera-grow-your-career/id736535961?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/4a/e8/9a4ae8db-50de-1ab3-cdb0-f2f08670912a/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/coursera-current-icon.png",
+    "version": "8.21.0",
+    "release_date": "2026-10-05T14:13:44Z"
+  },
+  "instapay": {
+    "name": "InstaPay Egypt",
+    "seller": "EGYPTIAN BANKS FOR TECHNOLOGICAL ADVANCEMENT",
+    "source": "https://apps.apple.com/eg/app/instapay-egypt/id1592108795?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/dd/c3/b9ddc3bb-2ac7-e6ea-757d-011f16583a3a/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/instapay-current-icon.png",
+    "version": "1.12.1",
+    "release_date": "2026-03-01T08:29:46Z"
+  },
+  "youtube": {
+    "name": "YouTube",
+    "seller": "Google LLC",
+    "source": "https://apps.apple.com/eg/app/youtube/id544007664?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/cc/4d/9dcc4d29-3199-cfdb-da1e-64ec30a4046b/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/youtube-current-icon.png",
+    "version": "21.41.5",
+    "release_date": "2026-10-11T16:03:55Z"
+  },
+  "facebook": {
+    "name": "Facebook",
+    "seller": "Meta Platforms, Inc.",
+    "source": "https://apps.apple.com/eg/app/facebook/id284882215?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/04/23/38042309-1e34-7b09-70c3-ec5733769459/Icon-Production-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/facebook-current-icon.png",
+    "version": "583.0.0",
+    "release_date": "2026-10-14T09:58:25Z"
+  },
+  "vodafone": {
+    "name": "Ana Vodafone",
+    "seller": "Vodafone International Services LLC",
+    "source": "https://apps.apple.com/eg/app/ana-vodafone/id437564823?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/7f/49/837f49da-d34b-69c3-10fe-ccf0ce058d90/AppIcon-0-1x_U007emarketing-0-11-0-sRGB-0-85-220-0.png/512x512bb.jpg",
+    "file": "/assets/products/vodafone-current-icon.png",
+    "version": "2026.10.1",
+    "release_date": "2026-10-17T19:26:15Z"
+  },
+  "whatsapp": {
+    "name": "WhatsApp Messenger",
+    "seller": "WhatsApp Inc.",
+    "source": "https://apps.apple.com/eg/app/whatsapp-messenger/id310633997?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/7d/17/067d170f-6f76-ab80-0356-39ac02ccd63c/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/whatsapp-current-icon.png",
+    "version": "26.40.77",
+    "release_date": "2026-10-12T12:34:26Z"
+  },
+  "tiktok": {
+    "name": "TikTok - Videos, Music & LIVE",
+    "seller": "TIKTOK PTE. LTD.",
+    "source": "https://apps.apple.com/eg/app/tiktok-videos-music-live/id835599320?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/f0/b2/d8f0b203-3968-dd77-07ff-70134b89f7c1/TikTok_AppIcon26-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/tiktok-current-icon.png",
+    "version": "47.1.0",
+    "release_date": "2026-10-07T18:18:07Z"
+  },
+  "freefire": {
+    "name": "Free Fire x NARUTO SHIPPUDEN",
+    "seller": "GARENA INTERNATIONAL I PRIVATE LIMITED",
+    "source": "https://apps.apple.com/eg/app/free-fire-x-naruto-shippuden/id1300146617?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/16/6b/ef166bba-1d69-85f5-ed84-6b7c6e73b55c/AppIcon-1788350393-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/freefire-current-icon.png",
+    "version": "1.132.1",
+    "release_date": "2026-09-16T03:30:15Z"
+  },
+  "instagram": {
+    "name": "Instagram",
+    "seller": "Instagram, Inc.",
+    "source": "https://apps.apple.com/eg/app/instagram/id389801252?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/41/0a/41410ad0-b22e-c93c-d4b1-7f14f8494e06/Prod-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/instagram-current-icon.png",
+    "version": "451.0.0",
+    "release_date": "2026-10-12T18:25:41Z"
+  },
+  "telda": {
+    "name": "Telda",
+    "seller": "Telda for Financial Applications Development and Technology LLC",
+    "source": "https://apps.apple.com/eg/app/telda/id1519608437?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/ff/be/cfffbe60-88e7-5e9c-ef52-afe0207d3f57/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/telda-current-icon.png",
+    "version": "6.9.3"
+  },
+  "fawry": {
+    "name": "myfawry",
+    "seller": "FAWRY FOR BANKING & PAYMENT TECHNOLOGY",
+    "source": "https://apps.apple.com/eg/app/myfawry/id1462911630?uo=4",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/e3/d9/7be3d992-9704-f024-8749-9497bb7ce2a3/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "file": "/assets/products/fawry-current-icon.png",
+    "version": "6.9.5"
+  }
+}

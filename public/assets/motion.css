@@ -1,0 +1,15 @@
+/* Payou motion: transform/opacity only, with an accessible static fallback. */
+.scroll-progress{position:fixed;inset:0 auto auto 0;height:3px;width:100%;transform:scaleX(0);transform-origin:right;background:linear-gradient(90deg,#3786ed,#8bd5ff);z-index:20;pointer-events:none}
+.art:before{content:'';position:absolute;width:75%;height:75%;border-radius:50%;background:radial-gradient(ellipse,#3e8cf21b,transparent 68%);animation:ambient-breathe 9s ease-in-out infinite;pointer-events:none;z-index:0}
+.orb:before{border-top-color:#87c7ff80;animation:orbit-ring 24s linear infinite}.orb:after{border-right-color:#83b8ff55;animation:orbit-ring 36s linear infinite reverse}
+.motion-spark{position:absolute;width:5px;height:5px;border-radius:50%;background:#97cbff;box-shadow:0 0 14px #75afff88;pointer-events:none;z-index:0;animation:spark-drift 7s ease-in-out infinite}
+.motion-spark:nth-of-type(2n){width:3px;height:3px;animation-duration:10s}
+.primary{position:relative;overflow:hidden;isolation:isolate}.primary:before{content:'';position:absolute;inset:-50%;background:linear-gradient(110deg,transparent 40%,#ffffff25 50%,transparent 60%);transform:translateX(-85%);animation:button-sheen 8s ease-in-out infinite;pointer-events:none;z-index:-1}
+.primary span,.order span{display:inline-block;transition:transform .25s ease}.primary:hover span,.order:hover span{transform:translate(-3px,3px)}
+.card{position:relative;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}.card .brand{transition:transform .4s ease}.card:hover .brand{transform:translateY(-4px) scale(1.035)}.order:active,.filter:active,.tile:active{scale:.97}
+.motion-ready .motion-enter{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--enter-delay,0ms)}.motion-ready .motion-enter.is-visible{opacity:1;transform:none}.motion-ready .card.motion-enter.is-visible:hover{transform:translateY(-7px)}
+.reveal{animation:appear .8s both}.hero .eyebrow{animation:appear .6s both}.hero h1{animation:appear .75s .1s both}.hero p{animation:appear .75s .2s both}.hero .actions{animation:appear .75s .3s both}.tile{animation-duration:8s}.t2{animation-delay:-2.6s}.t3{animation-delay:-5.2s}
+body.motion-paused *,body.motion-paused *:before,body.motion-paused *:after{animation-play-state:paused!important}
+@keyframes orbit-ring{to{transform:rotate(360deg)}}@keyframes ambient-breathe{50%{transform:scale(1.12);opacity:.55}}@keyframes spark-drift{0%,100%{transform:translateY(0);opacity:.2}50%{transform:translateY(-18px);opacity:.8}}@keyframes button-sheen{0%,65%{transform:translateX(-85%)}90%,100%{transform:translateX(85%)}}
+@media(max-width:760px){.motion-spark:nth-of-type(2n){display:none}.art:before{animation:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.motion-ready .motion-enter{opacity:1!important;transform:none!important}.scroll-progress,.motion-spark{display:none}*,*:before,*:after{animation:none!important;transition:none!important}}

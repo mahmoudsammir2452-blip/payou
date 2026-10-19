@@ -1,0 +1,18 @@
+/* A diffuse decorative wash, fading on every edge while content stays sharp. */
+body.soft-background .hero{position:relative;isolation:isolate}
+body.soft-background .hero::before{
+ content:"";position:absolute;inset:-35px -18px;z-index:-1;pointer-events:none;
+ background:url('/assets/backgrounds/soft-texture-v1.webp') 40% center/cover no-repeat;
+ filter:blur(36px);opacity:.44;transform:scale(1.04);
+ mask-image:radial-gradient(ellipse 72% 75% at 50% 45%,#000 0%,#000b 32%,#0004 50%,transparent 68%);
+ -webkit-mask-image:radial-gradient(ellipse 72% 75% at 50% 45%,#000 0%,#000b 32%,#0004 50%,transparent 68%);
+ border:0;border-radius:0;box-shadow:none;
+}
+@media(max-width:760px){
+ body.soft-background .hero::before{
+  inset:-24px -8px;filter:blur(24px) brightness(1.45) saturate(.85);
+  background-position:22% center;opacity:.78;
+  mask-image:radial-gradient(ellipse 70% 72% at 50% 48%,#000 0%,#000 46%,#0009 60%,transparent 78%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 72% at 50% 48%,#000 0%,#000 46%,#0009 60%,transparent 78%);
+ }
+}

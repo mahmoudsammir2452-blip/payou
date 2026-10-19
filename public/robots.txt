@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /insights
+Disallow: /api/
+Sitemap: https://payou.crispcharm11.chatgpt.site/sitemap.xml

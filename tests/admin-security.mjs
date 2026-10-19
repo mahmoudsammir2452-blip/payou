@@ -1,0 +1,40 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {DatabaseSync} from 'node:sqlite';import ts from 'typescript';import {randomBytes} from 'node:crypto';
+const sqlite=new DatabaseSync(':memory:');for(const name of fs.readdirSync('migrations').filter(x=>x.endsWith('.sql')).sort())sqlite.exec(fs.readFileSync('migrations/'+name,'utf8'));
+const DB={prepare(sql){let values=[];const api={bind(...args){values=args;return api},async first(){return sqlite.prepare(sql).get(...values)||null},async all(){return {results:sqlite.prepare(sql).all(...values)}},async run(){const r=sqlite.prepare(sql).run(...values);return {meta:{changes:r.changes}}}};return api},async batch(items){sqlite.exec('BEGIN');try{const out=[];for(const i of items)out.push(await i.run());sqlite.exec('COMMIT');return out}catch(e){sqlite.exec('ROLLBACK');throw e}}};
+const env={DB,PAYOU_ADMIN_PEPPER:randomBytes(32).toString('hex')};const cache=new Map();
+function load(file){file=path.resolve(file);if(cache.has(file))return cache.get(file);const exports={};cache.set(file,exports);const code=ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText;new Function('require','exports',code)(id=>id==='cloudflare:workers'?{env}:load(path.resolve(path.dirname(file),id+'.ts')),exports);return exports}
+const auth=load('app/admin-auth.ts'),api=load('app/api/admin/route.ts'),store=load('app/catalog-store.ts');const token=randomBytes(32).toString('hex');env.PAYOU_ADMIN_SETUP_HASH=await auth.sha(token);
+const origin='https://payou.test';const request=(body,cookie='',otherOrigin=origin)=>new Request(origin+'/api/admin',{method:'POST',headers:{origin:otherOrigin,cookie,'CF-Connecting-IP':'192.0.2.1','content-type':'application/json'},body:JSON.stringify(body)});const get=cookie=>api.GET(new Request(origin+'/api/admin',{headers:{cookie}}));
+assert.equal((await api.POST(request({action:'save',product:{}}))).status,401);
+assert.equal((await api.POST(request({action:'setup',password:'test password for isolated tests',token:'wrong'}))).status,403);
+let r=await api.POST(request({action:'setup',password:'test password for isolated tests',token}));assert.equal(r.status,200);const firstCookie=r.headers.get('set-cookie').split(';')[0],recovery=(await r.json()).recovery;assert.match(recovery,/^[a-f0-9]{64}$/);assert.match(r.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);
+assert.equal((await api.POST(request({action:'setup',password:'test password for isolated tests',token}))).status,409);
+let state=await (await get(firstCookie)).json();assert.equal(state.authenticated,true);assert.equal(state.products.length,33);
+let p={...state.products[0],price:123,descriptionAr:'<script>alert(1)</script>'};r=await api.POST(request({action:'save',product:p},firstCookie));assert.equal(r.status,200);assert.equal((await r.json()).version,1);assert.equal((await api.POST(request({action:'save',product:p},firstCookie))).status,409);
+assert.equal((await store.catalog())[0].price,123);
+assert.equal((await api.POST(request({action:'save',product:{...p,price:-1}},firstCookie))).status,400);
+assert.equal((await api.POST(request({action:'save',product:p},firstCookie,'https://evil.test'))).status,403);
+let exported=await api.GET(new Request(origin+'/api/admin?export=1',{headers:{cookie:firstCookie}}));const backup=await exported.json();assert.equal(backup.products.length,33);assert(!JSON.stringify(backup).includes('recovery'));assert.equal((await api.GET(new Request(origin+'/api/admin?export=1'))).status,401);
+r=await api.POST(request({action:'password',current:'test password for isolated tests',password:'another test password for isolated tests'},firstCookie));assert.equal(r.status,200);const secondCookie=r.headers.get('set-cookie').split(';')[0];assert.equal(await auth.authenticated(new Request(origin,{headers:{cookie:firstCookie}})),false);assert.equal(await auth.authenticated(new Request(origin,{headers:{cookie:secondCookie}})),true);
+assert.equal((await api.POST(request({action:'logout'},secondCookie))).status,200);assert.equal(await auth.authenticated(new Request(origin,{headers:{cookie:secondCookie}})),false);
+r=await api.POST(request({action:'recover',password:'recovered password for isolated tests',recovery}));assert.equal(r.status,200);const rotated=(await r.json()).recovery;assert.notEqual(rotated,recovery);
+assert.equal((await api.POST(request({action:'recover',password:'recovered password for isolated tests',recovery}))).status,401);
+const home=load('app/route.ts');const page=await (await home.GET()).text();assert(page.includes('\\u003cscript>'));assert(!page.includes('"descriptionAr":"<script>'));
+for(let i=0;i<11;i++)r=await api.POST(request({action:'login',password:'definitely incorrect password'}));assert.equal(r.status,429);
+assert.equal(sqlite.prepare('SELECT COUNT(*) AS n FROM admin_credentials').get().n,1);
+console.log('PASS: setup token, one-time activation, login cookies, authenticated product edits, stale edits, price validation, CSRF, export privacy, password rotation, logout, recovery rotation, rate limits, HTML escaping and migrations.');
+
+const studioPage=await (await home.GET(new Request(origin+'/?preview=studio'))).text();assert(studioPage.includes('class="studio-preview"'));
+assert(page.includes('/assets/soft-background.css'));assert(page.includes('class="soft-background"'));assert(!page.includes('/assets/waves-background.css'));assert(!page.includes('/assets/studio-preview.css'));assert(!page.includes('/assets/calm-background.css'));
+const wavesPage=await (await home.GET(new Request(origin+'/?preview=waves'))).text();assert(wavesPage.includes('/assets/waves-background.css'));
+const calmPage=await (await home.GET(new Request(origin+'/?preview=calm'))).text();assert(calmPage.includes('/assets/calm-background.css'));assert.equal((await store.catalog())[0].price,123);
+console.log('PASS: approved soft background by default; comparison variants opt-in; catalog edits preserved');
+
+const worker=load('worker.ts').default;
+const assets={fetch:async()=>new Response('asset',{status:200})};
+let w=await worker.fetch(new Request(origin+'/'),{ASSETS:assets});assert.equal(w.status,200);let wh=await w.text();assert(wh.includes(origin+'/assets/payou-share.png'));assert(!wh.includes('https://payou.crispcharm11.chatgpt.site'));
+assert.equal((await worker.fetch(new Request(origin+'/',{method:'POST'}),{ASSETS:assets})).status,405);
+assert.equal((await worker.fetch(new Request(origin+'/insights',{headers:{'oai-authenticated-user-email':'owner@example.com'}}),{ASSETS:assets})).status,302);
+w=await worker.fetch(new Request(origin+'/robots.txt'),{ASSETS:assets});assert((await w.text()).includes(origin+'/sitemap.xml'));
+w=await worker.fetch(new Request(origin+'/',{method:'HEAD'}),{ASSETS:assets});assert.equal(await w.text(),'');
+console.log('PASS: direct Worker routing, idempotent schema bootstrap, migrated canonical/share URLs, protected insights, method restrictions and HEAD responses.');
